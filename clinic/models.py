@@ -1,12 +1,7 @@
 from django.db import models
 
 
-class Doctor(models.Model):
-    name = models.CharField(max_length=100)
-    specialty = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.name.title()
 
 
 class Patient(models.Model):
@@ -29,12 +24,20 @@ class Procedure(models.Model):
     def __str__(self):
         return self.name
 
+
 class Medicine(models.Model):
     name = models.CharField(max_length=55)
 
     def __str__(self):
         return self.name
 
+
+class Doctor(models.Model):
+    name = models.CharField(max_length=100)
+    specialty = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name.title()
 
 class Visit(models.Model):
     date = models.DateField()

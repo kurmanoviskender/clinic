@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
+<p><a href="{% url 'new_visit' %}"> Add new visit </a></p>
 {% for visit in object_list %}
 
-<p>{{ visit }}</p>
+<p> <a href ="{% url 'visit_detail' visit.pk %} "> {{ visit }} </a></p>
 
 {% endfor %}
 </body>

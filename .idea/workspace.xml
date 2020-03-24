@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aa4edbb-27e4-4b16-ba9c-cf1b735b2e19" name="Default Changelist" comment="" />
+    <list default="true" id="7aa4edbb-27e4-4b16-ba9c-cf1b735b2e19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/doctor_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/doctors_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/doctors_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/medicine_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/medicines_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/medicines_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/patient_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/patients_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/patients_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/procedure_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/procedures_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/procedures_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/visit_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/visits_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/visits_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +32,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZO6yiCH5Bd2yq7K5af2bqgMw4W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -44,5 +67,11 @@
       <updated>1584698049380</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="514" y="145" width="571" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585031553179">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="514" y="145" width="571" height="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585031553179" />
   </component>
 </project>

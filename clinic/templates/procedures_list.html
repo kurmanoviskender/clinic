@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
+<p><a href="{% url 'new_procedure' %}"> Add new procedure </a></p>
 {% for procedure in object_list %}
 
-<p>{{ procedure }}</p>
+<p><a href="{% url 'procedure_detail' procedure.pk %}"> {{ procedure }} </a></p>
 
 {% endfor %}
 

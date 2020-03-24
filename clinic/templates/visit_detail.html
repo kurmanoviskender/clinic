@@ -9,8 +9,16 @@
 <p>{{ object.patient }} </p>
 <p>{{ object.doctor }}</p>
 <p>{{ object.specialty }} </p>
-<p>{{ object. description }} </p>
-<p>{{ object.medicine }} </p>
-<p>{{ object. procedure }} </p>
+<p>{{ object.description }} </p>
+<p>{% for medicine in object.medicine.all %}
+{{ medicine }}
+{% endfor %}
+</p>
+<p>
+    {% for procedure in object.procedure.all %}
+    {{procedure}}
+    {% endfor %}
+</p>
+<h5><a href="{% url 'visit_edit' object.pk %}"> Change information in this visit</a> </h5>
 </body>
 </html>

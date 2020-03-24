@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-{{ object }}
-{{ object.specialty }}
+<p>{{ object }}</p>
+<p>{{ object.specialty }}</p>
 
+<h5><a href="{% url 'doctor_edit' object.pk %}"> Change information about the doctor</a> </h5>
 
 </body>
 </html>

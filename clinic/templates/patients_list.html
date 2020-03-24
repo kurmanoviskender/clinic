@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
+<p> <a href="{% url 'new_patient' %}"> Add new patient </a></p>
 {% for patient in object_list %}
 
-<p>{{ patient }}</p>
+<p><a href="{% url 'patient_detail' patient.pk %}"> {{ patient }} </a></p>
 
 {% endfor %}
 
