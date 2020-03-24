@@ -23,5 +23,10 @@ urlpatterns = [
     path('procedure/<int:pk>/edit/', ProcedureEditView.as_view(), name ='procedure_edit'),
     path('medicine/<int:pk>/edit/', MedicineEditView.as_view(), name='medicine_edit'),
     path('visit/<int:pk>/edit/', VisitEditView.as_view(), name='visit_edit'),
+    path('patient/<int:pk>/delete/', PatientDeleteView.as_view(), name='patient_delete'),
+    path('doctor/<int:pk>/delete/', DoctorDeleteView.as_view(), name = 'doctor_delete'),
+    path('procedure/<int:pk>/delete/', ProcedureDeleteView.as_view(), name='procedure_delete'),
+    path('medicine/<int:pk>/delete/', MedicineDeleteView.as_view(), name = 'medicine_delete'),
+    path('visit/<int:pk>/delete/', VisitDeleteView.as_view(), name='visit_delete'),
 
 ]

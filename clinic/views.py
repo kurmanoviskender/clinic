@@ -1,15 +1,13 @@
 from django.http import request
 from django.shortcuts import render
 from django.urls import reverse
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Patient, Doctor, Visit, Procedure, Medicine
 from .forms import *
 
 
-
 def index(request):
     return render(request, 'index.html')
-
 
 
 class PatientsListView(ListView):
@@ -19,7 +17,7 @@ class PatientsListView(ListView):
 
 class DoctorsListView(ListView):
     model = Doctor
-    template_name ='doctors_list.html'
+    template_name = 'doctors_list.html'
 
 
 class ProceduresListView(ListView):
@@ -110,7 +108,7 @@ class VisitCreateView(CreateView):
 class PatientEditView(UpdateView):
     model = Patient
     form_class = PatientEditForm
-    template_name = 'profile_edit.html'
+    template_name = 'patient_edit.html'
 
     def get_success_url(self):
         return reverse('patients_list')
@@ -150,3 +148,44 @@ class VisitEditView(UpdateView):
 
     def get_success_url(self):
         return reverse('visits_list')
+
+
+class PatientDeleteView(DeleteView):
+    model = Patient
+    template_name = 'patient_delete.html'
+
+    def get_success_url(self):
+        return reverse('patients_list')
+
+
+class DoctorDeleteView(DeleteView):
+    model = Doctor
+    template_name = 'doctor_delete.html'
+
+    def get_success_url(self):
+        return reverse('doctors_list')
+
+
+class ProcedureDeleteView(DeleteView):
+    model = Procedure
+    template_name = 'procedure_delete.html'
+
+    def get_success_url(self):
+        return reverse('procedures_list')
+
+
+class MedicineDeleteView(DeleteView):
+    model = Medicine
+    template_name = 'medicine_delete.html'
+
+    def get_success_url(self):
+        return reverse('medicines_list')
+
+
+class VisitDeleteView(DeleteView):
+    model = Visit
+    template_name = 'visit_delete.html'
+
+    def get_success_url(self):
+        return reverse('visits_list')
+

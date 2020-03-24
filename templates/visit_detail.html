@@ -20,5 +20,7 @@
     {% endfor %}
 </p>
 <h5><a href="{% url 'visit_edit' object.pk %}"> Change information in this visit</a> </h5>
+<h5> <a href="{% url 'visit_delete' object.pk %}"> Delete this visit from database</a></h5>
+
 </body>
 </html>

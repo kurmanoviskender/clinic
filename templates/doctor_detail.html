@@ -9,6 +9,6 @@
 <p>{{ object.specialty }}</p>
 
 <h5><a href="{% url 'doctor_edit' object.pk %}"> Change information about the doctor</a> </h5>
-
+<h5> <a href="{% url 'doctor_delete' object.pk %}"> Delete this doctor from database</a></h5>
 </body>
 </html>

@@ -7,6 +7,7 @@
 <body>
 {{ object }}
 <h5><a href="{% url 'medicine_edit' object.pk %}"> Change information about the medicine</a> </h5>
+<h5> <a href="{% url 'medicine_delete' object.pk %}"> Delete this medicine from database</a></h5>
 
 </body>
 </html>

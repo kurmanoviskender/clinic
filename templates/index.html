@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 <p><a href="{% url 'patients_list' %}"> Patients</a>  </p>
 <p><a href="{% url 'doctors_list' %}"> Doctors</a>  </p>
 <p><a href="{% url 'visits_list' %}"> Visits</a>  </p>
 <p><a href="{% url 'procedures_list' %}"> Procedures</a>  </p>
 <p><a href="{% url 'medicines_list' %}"> Medicines</a>  </p>
-</body>
-</html>
+
+{% endblock %}

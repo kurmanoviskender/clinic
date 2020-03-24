@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aa4edbb-27e4-4b16-ba9c-cf1b735b2e19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/doctor_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/doctors_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/doctors_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/medicine_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/medicines_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/medicines_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/patient_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/patients_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/patients_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/procedure_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/procedures_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/procedures_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/visit_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/visits_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/templates/visits_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/doctors_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/medicines_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/patients_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/procedures_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/templates/visits_list.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clinic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clinic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
