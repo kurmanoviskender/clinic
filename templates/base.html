@@ -1,63 +1,56 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 {% load static %}
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>CLINIC</title>
+<html xmlns:background-image="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Clinic
+	</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+	<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" >
+	<link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-  </head>
-  <body>
-    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-
-                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Landing Zero</a>
-            </div>
-            <div class="navbar-collapse collapse" id="bs-navbar">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="{% url 'patients_list' %}">Patients</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{% url 'doctors_list' %}">Doctors</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{% url 'visits_list' %}">Visits</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{% url 'procedures_list' %}">Procedures</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{% url 'medicines_list' %}">Medicines</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <header id="first" style="height:200px;">
-        <div class="header-content">
-            <div class="inner">
-                <h1 class="cursive">Simple, One Page Design</h1>
-                <hr>
-            </div>
-        </div>
-    </header>
-    <section class="bg-primary" id="one">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                    {% block content %}
-
-                    {% endblock %}
-
-                </div>
-            </div>
-        </div>
-    </section>
+</head>
+<body>
+<div  id="header-wrapper" style="background: #6CA1C9; height:100px;" >
+	<div id="header" class="container">
+		<div id="menu">
+			<ul>
+				<li><a href="{% url 'patients_list' %}"> Patients</a></li>
+				<li><a href="{% url 'doctors_list' %}"> Doctors</a> </li>
+				<li><a href="{% url 'visits_list' %}"> Visits</a>  </li>
+				<li><a href="{% url 'procedures_list' %}"> Procedures</a> </li>
+				<li><a href="{% url 'medicines_list' %}"> Medicines</a> </li>
 
 
-  </body>
+			</ul>
+		</div>
+
+
+	</div>
+</div>
+
+	<div id="wrapper3" >
+		<div id="portfolio" class="container">
+
+			<div class ="content" >
+
+				{% block content %}
+
+				{% endblock %}
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div  id="copyright">
+		<p>Clinic patient management and accounting system</p>
+	</div>
+</body>
 </html>

@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<h2>{{ object }}</h2>
-<p>{{ object.birth_date }}</p>
-<p>{{ object.sex }}</p>
-<p>{{ object.address }}</p>
-<p>{{ object.passport }}</p>
-<p>{{ object.insurance }}</p>
+{% block content %}
+<h2>Patient name  {{ object }}</h2>
+<p>Date of birth:  {{ object.birth_date }}</p>
+<p>Sex:  {{ object.sex }}</p>
+<p>Address:  {{ object.address }}</p>
+<p>Passport:  {{ object.passport }}</p>
+<p>Insurance:  {{ object.insurance }}</p>
 
 <h5><a href="{% url 'patient_edit' object.pk %}"> Change information about the patient</a> </h5>
 <h5> <a href="{% url 'patient_delete' object.pk %}"> Delete this patient from database</a></h5>
 
-</body>
-</html>
+{% endblock %}

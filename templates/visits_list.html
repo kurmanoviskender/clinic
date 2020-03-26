@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p><a href="{% url 'new_visit' %}"> Add new visit </a></p>
+{% extends 'base.html' %}
+
+{% block content %}
+<h4><a href="{% url 'new_visit' %}"> Add new visit </a></h4>
 {% for visit in object_list %}
 
 <p> <a href ="{% url 'visit_detail' visit.pk %} "> {{ visit }} </a></p>
 
 {% endfor %}
-</body>
-</html>
+{% endblock %}

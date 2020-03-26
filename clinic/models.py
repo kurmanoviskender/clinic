@@ -17,6 +17,8 @@ class Patient(models.Model):
     def __str__(self):
         return self.name.title()
 
+    class Meta:
+        ordering = ['name']
 
 class Procedure(models.Model):
     name = models.CharField(max_length=55)
@@ -24,12 +26,18 @@ class Procedure(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+
 
 class Medicine(models.Model):
     name = models.CharField(max_length=55)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
 
 
 class Doctor(models.Model):
@@ -39,20 +47,24 @@ class Doctor(models.Model):
     def __str__(self):
         return self.name.title()
 
+    class Meta:
+        ordering = ['name']
+
+
 class Visit(models.Model):
     date = models.DateField()
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='visit_patient')
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name='visit_doctor')
     specialty = models.CharField(max_length=100)
     description = models.TextField()
-    medicine = models.ManyToManyField(Medicine)
-    procedure = models.ManyToManyField(Procedure)
+    medicine = models.ManyToManyField(Medicine, related_name='visit_medicine')
+    procedure = models.ManyToManyField(Procedure, related_name='visit_procedure')
 
     def __str__(self):
         return f'On {self.date}, patient - {self.patient} by doctor {self.doctor} '
 
     class Meta:
-        ordering = ['date', ]
+        ordering = ['-date', ]
 
 
 

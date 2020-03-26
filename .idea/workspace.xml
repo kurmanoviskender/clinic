@@ -2,32 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aa4edbb-27e4-4b16-ba9c-cf1b735b2e19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/doctor_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/doctors_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/medicine_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/medicines_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/patient_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/patients_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/procedure_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/procedures_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/visit_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinic/templates/visits_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clinic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clinic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/clinic/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctors_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctors_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medicine_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medicine_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medicine_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medicine_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medicine_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medicine_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medicine_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medicine_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medicines_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medicines_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patient_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patient_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patient_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patient_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patients_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patients_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/procedure_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/procedure_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/procedure_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/procedure_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/procedure_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/procedure_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/procedure_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/procedure_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/procedures_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/procedures_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/visit_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/visit_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/visit_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/visit_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/visit_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/visit_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/visit_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/visit_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/visits_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/visits_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +70,8 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mentors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -79,9 +93,40 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="514" y="145" width="571" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585031553179">
+    <state x="234" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585216541656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="514" y="145" width="571" height="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585031553179" />
+    <state x="234" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585216541656" />
+    <state x="514" y="145" width="571" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585133030715">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="514" y="145" width="571" height="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585133030715" />
+    <state x="250" y="180" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585210691541">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="250" y="180" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585210691541" />
+    <state x="545" y="129" width="424" height="479" key="FileChooserDialogImpl" timestamp="1585231381091">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="545" y="129" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585231381091" />
+    <state x="187" y="0" key="SettingsEditor" timestamp="1585150452641">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585150452641" />
+    <state x="380" y="149" key="com.intellij.ide.util.TipDialog" timestamp="1585209883344">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="149" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585209883344" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/wsgi.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

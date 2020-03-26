@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 {{ object }}
 <h5><a href="{% url 'medicine_edit' object.pk %}"> Change information about the medicine</a> </h5>
 <h5> <a href="{% url 'medicine_delete' object.pk %}"> Delete this medicine from database</a></h5>
 
-</body>
-</html>
+{% endblock %}

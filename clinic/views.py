@@ -6,10 +6,6 @@ from .models import Patient, Doctor, Visit, Procedure, Medicine
 from .forms import *
 
 
-def index(request):
-    return render(request, 'index.html')
-
-
 class PatientsListView(ListView):
     model = Patient
     template_name = 'patients_list.html'

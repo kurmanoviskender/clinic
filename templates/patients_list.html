@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p> <a href="{% url 'new_patient' %}"> Add new patient </a></p>
+{% extends 'base.html' %}
+
+{% block content %}
+<h4> <a href="{% url 'new_patient' %}"> Add new patient </a></h4>
 {% for patient in object_list %}
 
 <p><a href="{% url 'patient_detail' patient.pk %}"> {{ patient }} </a></p>
 
 {% endfor %}
-
-</body>
-</html>
+{% endblock %}

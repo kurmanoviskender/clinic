@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p><a href="{% url 'new_medicine' %}"> Add new medicine </a></p>
+{% extends 'base.html' %}
+
+{% block content %}
+<h4><a href="{% url 'new_medicine' %}"> Add new medicine </a></h4>
 {% for medicine in object_list %}
 
 <p><a href="{% url 'medicine_detail' medicine.pk %}">{{ medicine }} </a></p>
 
 {% endfor %}
-</body>
-</html>
+{% endblock %}

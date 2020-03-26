@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p><a href="{% url 'new_procedure' %}"> Add new procedure </a></p>
+{% extends 'base.html' %}
+
+{% block content %}
+<h4><a href="{% url 'new_procedure' %}"> Add new procedure </a></h4>
 {% for procedure in object_list %}
 
 <p><a href="{% url 'procedure_detail' procedure.pk %}"> {{ procedure }} </a></p>
 
 {% endfor %}
-
-</body>
-</html>
+{% endblock %}

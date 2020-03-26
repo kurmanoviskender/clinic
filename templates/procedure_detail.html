@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 
 {{ object.name }}
 <h5><a href="{% url 'procedure_edit' object.pk %}"> Change information about the procedure</a> </h5>
 <h5> <a href="{% url 'procedure_delete' object.pk %}"> Delete this procedure from database</a></h5>
 
-</body>
-</html>
+{% endblock %}

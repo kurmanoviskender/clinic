@@ -35,6 +35,7 @@ class VisitCreateForm(forms.ModelForm):
         visit = super().save(commit=False)
         visit.specialty = visit.doctor.specialty
         visit.save()
+        self.save_m2m()
         return visit
 
 
@@ -61,6 +62,7 @@ class MedicineEditForm(forms.ModelForm):
         model = Medicine
         fields = '__all__'
 
+
 class VisitEditForm(forms.ModelForm):
     class Meta:
         model = Visit
@@ -70,6 +72,7 @@ class VisitEditForm(forms.ModelForm):
         visit = super().save(commit=False)
         visit.specialty = visit.doctor.specialty
         visit.save()
+        self.save_m2m()
         return visit
 
 

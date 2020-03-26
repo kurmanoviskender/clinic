@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 <h3> {{ object.date }} </h3>
-<p>{{ object.patient }} </p>
-<p>{{ object.doctor }}</p>
-<p>{{ object.specialty }} </p>
-<p>{{ object.description }} </p>
-<p>{% for medicine in object.medicine.all %}
-{{ medicine }}
-{% endfor %}
-</p>
-<p>
+<p>Patient name: {{ object.patient }} </p>
+<p>Doctor: {{ object.doctor }}</p>
+<p>Specialty: {{ object.specialty }} </p>
+<p>Description: {{ object.description }} </p>
+<p>Medicines: </p>
+{% for medicine in object.medicine.all %}
+<span> {{medicine}} </span>
+    {% endfor %}<br><br>
+<p>Procedures: </p>
     {% for procedure in object.procedure.all %}
-    {{procedure}}
+<span> {{procedure}} </span>
     {% endfor %}
-</p>
+
 <h5><a href="{% url 'visit_edit' object.pk %}"> Change information in this visit</a> </h5>
 <h5> <a href="{% url 'visit_delete' object.pk %}"> Delete this visit from database</a></h5>
 
-</body>
-</html>
+{% endblock %}
