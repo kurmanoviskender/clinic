@@ -2,5 +2,5 @@ env
 __pycache__
 .idea
 sqlite3
-clinic_dump.sql
+clinicdb_dump.sql
 

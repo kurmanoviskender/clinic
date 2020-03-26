@@ -1,9 +1,6 @@
 from django.db import models
 
 
-
-
-
 class Patient(models.Model):
     name = models.CharField(max_length=100)
     birth_date = models.DateField()
@@ -19,6 +16,7 @@ class Patient(models.Model):
 
     class Meta:
         ordering = ['name']
+
 
 class Procedure(models.Model):
     name = models.CharField(max_length=55)
@@ -40,9 +38,16 @@ class Medicine(models.Model):
         ordering = ['name']
 
 
+class Specialty(models.Model):
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title.title()
+
+
 class Doctor(models.Model):
     name = models.CharField(max_length=100)
-    specialty = models.CharField(max_length=100)
+    specialty = models.ForeignKey(Specialty, on_delete=models.CASCADE, related_name='doctor_specialty')
 
     def __str__(self):
         return self.name.title()
@@ -65,6 +70,3 @@ class Visit(models.Model):
 
     class Meta:
         ordering = ['-date', ]
-
-
-
